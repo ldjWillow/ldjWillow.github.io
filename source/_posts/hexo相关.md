@@ -70,3 +70,5 @@ header.post-header {
 > * [hexo的next主题个性化教程：打造炫酷网站](https://blog.csdn.net/qq_33699981/article/details/72716951)
 > * [[Next主题个性化设置](https://www.cnblogs.com/liziczh/p/9318656.html)](http://www.cnblogs.com/liziczh/p/9318656.html)
 > * [Hexo设置主题以及Next主题个性设置](https://www.jianshu.com/p/b20fc983005f)
+> * [Hexo文章简单加密访问](https://www.jianshu.com/p/a2330937de6c)
+
