@@ -3,20 +3,25 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
+title: DjのBlog
+subtitle: 记录学习的技能和遇到的问题
+description: 做自己爱做的事，爱自己在做的事！
 keywords:
-author: John Doe
-language:
-timezone:
+author: Ldjun
+#网站语言，默认英语，设置简体汉语
+language: zh-Hans
+#时区，默认电脑时区
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://yoursite.com
 root: /
-permalink: :year/:month/:day/:title/
+# permalink: :year/:month/:day/:title/
+# 路径样式：  http://xxx.com/posts/programming/2016-03-18-hello-world.html
+permalink: posts/:category/:year-:month-:day-:title.html
 permalink_defaults:
+
 
 # Directory
 source_dir: source
@@ -55,7 +60,11 @@ index_generator:
   
 # Category & Tag
 default_category: uncategorized
+# category_map 是为了让url中尽量少出现中文，做的映射 如在文章开头  categories: 编程     则在url中， 会变成: .../posts/programming/xxx.html
 category_map:
+	编程: programming
+	生活: life
+	其他: other
 tag_map:
 
 # Date / Time format
