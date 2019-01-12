@@ -64,3 +64,9 @@ header.post-header {
 }
 ```
 
+#### 参考链接
+
+> * [2018最新版Hexo博客Next主题6.0配置优化](https://blog.csdn.net/qq_32454537/article/details/79482896)
+> * [hexo的next主题个性化教程：打造炫酷网站](https://blog.csdn.net/qq_33699981/article/details/72716951)
+> * [[Next主题个性化设置](https://www.cnblogs.com/liziczh/p/9318656.html)](http://www.cnblogs.com/liziczh/p/9318656.html)
+
