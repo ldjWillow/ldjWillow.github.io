@@ -573,7 +573,7 @@ pace: false
 pace_theme: pace-theme-minimal
 
 # Canvas-nest
-canvas_nest: false
+canvas_nest: true
 
 # three_waves
 three_waves: false
@@ -678,3 +678,5 @@ images: images
 
 # Theme version
 version: 5.1.2
+passage_end_tag:
+  enabled: true
