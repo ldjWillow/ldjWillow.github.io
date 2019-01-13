@@ -6,14 +6,14 @@ tags: [hexo]
 
 hexo相关设置
 
-### 1、Hexo操作常用命令
+#### Hexo操作常用命令
 
 ```
 npm install hexo-deployer-git  #此时当前分支应显示为hexo
 
 ```
 
-### 2、换电脑之后的操作
+#### 换电脑之后的操作
 
 - [hexo系列问题之我们换了电脑怎么办](https://blog.csdn.net/wxl1555/article/details/79293159)
 
@@ -23,7 +23,24 @@ npm install hexo-deployer-git  #此时当前分支应显示为hexo
   npm install hexo-deployer-git  #此时当前分支应显示为hexo
   ```
 
-###3、修改主题next的默认宽度
+#### 给主题next添加搜索功能
+
+- 安装插件
+
+  ```
+  npm install hexo-generator-searchdb --save
+  ```
+
+- 修改配置文件
+
+  路径：/blog/themes/next下的_config.yml文件，进行编辑
+
+  ```
+  local_search:
+      enable: true
+  ```
+
+#### 修改主题next的默认宽度
 
  	打开编辑`themes\next\source\css\_schemes\Pisces\_layout.styl`，在底部添加如下代码：
 
@@ -63,6 +80,16 @@ header.post-header {
   }
 }
 ```
+
+#### 常见问题
+
+ ##### hexo的表体无法渲染Markdown语法
+
+​       在##后面加空格,如
+
+  ```
+## 二级标题
+  ```
 
 #### 参考链接
 
