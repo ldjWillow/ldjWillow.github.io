@@ -12,6 +12,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
 
+<script>
+	(function(){
+		if(''){
+			if (prompt('请输入文章密码','') !== ''){
+				alert('密码错误！');
+				history.back();
+			}
+		}
+	})();
+</script>
+
+
 
 
 
@@ -269,6 +281,148 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/posts/博客/2019-01-13-Hexo文章简单加密访问.html">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Ldjun">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DjのBlog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/posts/博客/2019-01-13-Hexo文章简单加密访问.html" itemprop="url">Hexo文章简单加密访问</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-13T10:45:29+08:00">
+                2019-01-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/博客/" itemprop="url" rel="index">
+                    <span itemprop="name">博客</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Hexo文章简单加密访问测试</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -980,7 +1134,26 @@
       
         
           
-            
+            <p>hexo相关设置</p>
+<h3 id="1、Hexo操作常用命令"><a href="#1、Hexo操作常用命令" class="headerlink" title="1、Hexo操作常用命令"></a>1、Hexo操作常用命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git  #此时当前分支应显示为hexo</span><br></pre></td></tr></table></figure>
+<h3 id="2、换电脑之后的操作"><a href="#2、换电脑之后的操作" class="headerlink" title="2、换电脑之后的操作"></a>2、换电脑之后的操作</h3><ul>
+<li><p><a href="https://blog.csdn.net/wxl1555/article/details/79293159" target="_blank" rel="noopener">hexo系列问题之我们换了电脑怎么办</a></p>
+<p>拉取代码后操作如下命令,该命令会自动安装Hexo相关依赖。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git  #此时当前分支应显示为hexo</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>###3、修改主题next的默认宽度</p>
+<pre><code>打开编辑`themes\next\source\css\_schemes\Pisces\_layout.styl`，在底部添加如下代码：
+</code></pre><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">// 以下为新增代码！！</span><br><span class="line"><span class="selector-tag">header</span>&#123; <span class="attribute">width</span>: <span class="number">75%</span> <span class="meta">!important</span>; &#125;</span><br><span class="line"><span class="selector-tag">header</span><span class="selector-class">.post-header</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: auto <span class="meta">!important</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container</span> <span class="selector-class">.main-inner</span> &#123; <span class="attribute">width</span>: <span class="number">75%</span>; &#125;</span><br><span class="line"><span class="selector-class">.content-wrap</span> &#123; <span class="attribute">width</span>: <span class="built_in">calc</span>(100% - 260px); &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.header</span> &#123;</span><br><span class="line">  +tablet() &#123;</span><br><span class="line">    <span class="selector-tag">width</span>: <span class="selector-tag">auto</span> !<span class="selector-tag">important</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  +<span class="selector-tag">mobile</span>() &#123;</span><br><span class="line">    <span class="attribute">width</span>: auto <span class="meta">!important</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.container</span> <span class="selector-class">.main-inner</span> &#123;</span><br><span class="line">  +tablet() &#123;</span><br><span class="line">    <span class="selector-tag">width</span>: <span class="selector-tag">auto</span> !<span class="selector-tag">important</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  +<span class="selector-tag">mobile</span>() &#123;</span><br><span class="line">    <span class="attribute">width</span>: auto <span class="meta">!important</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.content-wrap</span> &#123;</span><br><span class="line">  +tablet() &#123;</span><br><span class="line">    <span class="selector-tag">width</span>: 100% !<span class="selector-tag">important</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  +<span class="selector-tag">mobile</span>() &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100%</span> <span class="meta">!important</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h4><blockquote>
+<ul>
+<li><a href="https://blog.csdn.net/qq_32454537/article/details/79482896" target="_blank" rel="noopener">2018最新版Hexo博客Next主题6.0配置优化</a></li>
+<li><a href="https://blog.csdn.net/qq_33699981/article/details/72716951" target="_blank" rel="noopener">hexo的next主题个性化教程：打造炫酷网站</a></li>
+<li><a href="http://www.cnblogs.com/liziczh/p/9318656.html" target="_blank" rel="noopener"><a href="https://www.cnblogs.com/liziczh/p/9318656.html" target="_blank" rel="noopener">Next主题个性化设置</a></a></li>
+<li><a href="https://www.jianshu.com/p/b20fc983005f" target="_blank" rel="noopener">Hexo设置主题以及Next主题个性设置</a></li>
+</ul>
+</blockquote>
+
           
         
       
@@ -1099,7 +1272,10 @@
       
         
           
-            
+            <p>本文记录Linux常用命令</p>
+<p>1、删除文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -rf *  #删除所有文件，隐藏文件不会删除</span><br></pre></td></tr></table></figure>
+
           
         
       
@@ -1320,7 +1496,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">9</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1331,7 +1507,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -1342,7 +1518,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -1353,6 +1529,19 @@
         
 
         <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/ldjWillow" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                    
+                      GitHub
+                    
+                </a>
+              </span>
+            
           
         </div>
 
