@@ -97,6 +97,10 @@ header.post-header {
 ## 二级标题
   ```
 
+####  推荐next主题博客
+
+[hoxios](https://hoxis.github.io/hexo-next-copyright.html)
+
 #### 参考链接
 
 > * [2018最新版Hexo博客Next主题6.0配置优化](https://blog.csdn.net/qq_32454537/article/details/79482896)

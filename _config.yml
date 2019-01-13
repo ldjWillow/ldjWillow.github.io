@@ -15,7 +15,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://ldjwillow.github.io
 root: /
 # permalink: :year/:month/:day/:title/
 # 路径样式：  http://xxx.com/posts/programming/2016-03-18-hello-world.html
