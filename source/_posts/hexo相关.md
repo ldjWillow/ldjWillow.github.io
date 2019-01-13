@@ -6,12 +6,17 @@ tags: [hexo]
 
 hexo相关设置
 
+<!-- more -->
+
 #### Hexo操作常用命令
 
 ```
 npm install hexo-deployer-git  #此时当前分支应显示为hexo
-
 ```
+
+#### 阅读全文
+
+在文章合适的位置添加`<!-- more -->`，Hexo推荐使用。
 
 #### 换电脑之后的操作
 

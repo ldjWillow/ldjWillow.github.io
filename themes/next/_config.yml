@@ -124,6 +124,15 @@ social_icons:
 #links:
   #Title: http://example.com/
 
+links_icon: link
+links_title: Links
+#links_layout: block    #块状布局，选一个注一个
+links_layout: inline    #行内布局，选一个注一个
+links:
+  Github: https://www.github.com
+  知乎: https://www.zhihu.com 
+  豆瓣: https://www.douban.com/
+  
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
