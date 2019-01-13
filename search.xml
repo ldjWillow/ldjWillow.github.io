@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Hexo文章简单加密访问]]></title>
+    <url>%2Fposts%2F%E5%8D%9A%E5%AE%A2%2F2019-01-13-Hexo%E6%96%87%E7%AB%A0%E7%AE%80%E5%8D%95%E5%8A%A0%E5%AF%86%E8%AE%BF%E9%97%AE.html</url>
+    <content type="text"><![CDATA[Hexo文章简单加密访问测试]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[test4]]></title>
+    <url>%2Fposts%2Fprogramming%2F2019-01-12-test4.html</url>
+    <content type="text"></content>
+      <categories>
+        <category>编程</category>
+      </categories>
+      <tags>
+        <tag>标签1</tag>
+        <tag>标签2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[test3]]></title>
+    <url>%2Fposts%2Funcategorized%2F2019-01-12-test3.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[test2]]></title>
+    <url>%2Fposts%2Funcategorized%2F2019-01-12-test2.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[test]]></title>
+    <url>%2Fposts%2Funcategorized%2F2019-01-11-test.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2Fposts%2Funcategorized%2F2019-01-11-hello-world.html</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[hexo相关]]></title>
+    <url>%2Fposts%2Funcategorized%2F2019-01-11-hexo%E7%9B%B8%E5%85%B3.html</url>
+    <content type="text"><![CDATA[hexo相关设置 Hexo操作常用命令1npm install hexo-deployer-git #此时当前分支应显示为hexo 换电脑之后的操作 hexo系列问题之我们换了电脑怎么办 拉取代码后操作如下命令,该命令会自动安装Hexo相关依赖。 1npm install hexo-deployer-git #此时当前分支应显示为hexo 给主题next添加搜索功能 安装插件 1npm install hexo-generator-searchdb --save 修改配置文件 路径：/blog/themes/next下的_config.yml文件，进行编辑 12local_search: enable: true 修改主题next的默认宽度打开编辑`themes\next\source\css\_schemes\Pisces\_layout.styl`，在底部添加如下代码： 12345678910111213141516171819202122232425262728293031323334// 以下为新增代码！！header&#123; width: 75% !important; &#125;header.post-header &#123; width: auto !important;&#125;.container .main-inner &#123; width: 75%; &#125;.content-wrap &#123; width: calc(100% - 260px); &#125;.header &#123; +tablet() &#123; width: auto !important; &#125; +mobile() &#123; width: auto !important; &#125;&#125;.container .main-inner &#123; +tablet() &#123; width: auto !important; &#125; +mobile() &#123; width: auto !important; &#125;&#125;.content-wrap &#123; +tablet() &#123; width: 100% !important; &#125; +mobile() &#123; width: 100% !important; &#125;&#125; 常见问题hexo的表体无法渲染Markdown语法​ 在##后面加空格,如 1## 二级标题 参考链接 2018最新版Hexo博客Next主题6.0配置优化 hexo的next主题个性化教程：打造炫酷网站 Next主题个性化设置 Hexo设置主题以及Next主题个性设置]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Linux常用命令]]></title>
+    <url>%2Fposts%2Funcategorized%2F2019-01-11-Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html</url>
+    <content type="text"><![CDATA[本文记录Linux常用命令 1、删除文件 1rm -rf * #删除所有文件，隐藏文件不会删除]]></content>
+      <tags>
+        <tag>命令</tag>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[git常用命令]]></title>
+    <url>%2Fposts%2Funcategorized%2F2019-01-11-git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html</url>
+    <content type="text"><![CDATA[1、拉取远程代码 12git clone https://github.com/ldjWillow/ldjWillow.github.io.gitgit clone -b hexo https://github.com/yourname/ldjWillow.github.io.git 从分支 hexo上拉取代码 2、查看分分支 123git branch 查看本地分支git branch -r 查看远程分支git branch -a 查看所有分支(本地和远程) 3、创建分支 12git branch node0 创建一个名为node0的分支git push origin node0 创建远程分支（实际上把本地分支node0推送到远程，故node0分支必须在本地先创建） 4、切换分支 1git checkout node0 5、创建并切换分支 1git checkout -b node1 6、删除分支 12git branch -d node1 删除本地分支git push origin --delete node0 删除远程分支 7、拉取分支git pull 1234$ git pull &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;$ git pull origin next:master 如果远程分支(next)要与当前分支合并，则冒号后面的部分可以省略。上面命令可以简写为： $ git pull origin next 8、放弃本地修改，强制更新 git fetch 只是下载远程的库的内容，不做任何的合并 git reset 把HEAD指向刚刚下载的最新的版本 12git fetch --allgit reset --hard origin/master 9、本地关联远程分支 12git branch --set-upstream-to=origin/remote_branch your_branchgit push --set-upstream origin hexo 10、添加(git add) git add all和git add .区别 git add -A 和 git add . 的区别 123git add readme.txt 提交单个文件git add readme.txt ant.txt 提交多个文件，用空格隔开git add *.html 提交所有html文件]]></content>
+  </entry>
+</search>
