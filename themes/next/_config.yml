@@ -124,10 +124,19 @@ social_icons:
 #links:
   #Title: http://example.com/
 
+links_icon: link
+links_title: Links
+#links_layout: block    #块状布局，选一个注一个
+links_layout: inline    #行内布局，选一个注一个
+links:
+  Github: https://www.github.com
+  知乎: https://www.zhihu.com 
+  豆瓣: https://www.douban.com/
+  
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-#avatar:
+avatar: https://upload.jianshu.io/users/upload_avatars/1863256/ef264918-5080-4a4f-9169-ea034b396a0f.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/240/h/240
 
 # Table Of Contents in the Sidebar
 toc:
@@ -204,8 +213,8 @@ post_meta:
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
   item_text: true
-  wordcount: false
-  min2read: false
+  wordcount: true
+  min2read: true
   separated_meta: true
 
 # Wechat Subscriber
@@ -343,7 +352,7 @@ changyan:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-#livere_uid: your uid
+livere_uid: MTAyMC80MjEzNC8xODY4MQ==
 
 # Baidu Share
 # Available value:
@@ -353,7 +362,7 @@ changyan:
 ##  type: button
 
 # Share
-#jiathis:
+jiathis: true
 # Warning: JiaThis does not support https.
 #add_this_id:
 
@@ -489,7 +498,7 @@ algolia_search:
 # Local search
 # Dependencies: https://github.com/flashlab/hexo-generator-search
 local_search:
-  enable: false
+  enable: true
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
   trigger: auto
@@ -564,7 +573,7 @@ pace: false
 pace_theme: pace-theme-minimal
 
 # Canvas-nest
-canvas_nest: false
+canvas_nest: true
 
 # three_waves
 three_waves: false
@@ -578,6 +587,25 @@ canvas_sphere: false
 # Only fit scheme Pisces
 # Canvas-ribbon
 canvas_ribbon: false
+
+live2d:
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  log: false
+  model:
+    use: tororo
+  display:
+    position: right
+    width: 150
+    height: 300
+  mobile:
+    show: true
+
+
 
 # Script Vendors.
 # Set a CDN address for the vendor you want to customize.
@@ -669,3 +697,5 @@ images: images
 
 # Theme version
 version: 5.1.2
+passage_end_tag:
+  enabled: true
