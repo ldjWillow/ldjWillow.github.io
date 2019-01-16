@@ -1,6 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[junit测试Spring]]></title>
+    <url>%2Fposts%2Fspring%2F2019-01-16-junit%E6%B5%8B%E8%AF%95Spring.html</url>
+    <content type="text"><![CDATA[在app.xml中配置 1&lt;bean name=&quot;date&quot; class=&quot;java.util.Date&quot;/&gt; 测试类 12345678910@RunWith(SpringJUnit4ClassRunner.class)@ContextConfiguration(locations = &#123; "classpath:applicationContext.xml" &#125;)public class MyTest &#123; @Autowired Date date; @Test public void hehe() &#123; System.out.println(date.toLocaleString()); &#125;&#125;]]></content>
+      <categories>
+        <category>spring</category>
+      </categories>
+      <tags>
+        <tag>spring</tag>
+        <tag>测试</tag>
+        <tag>junit</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Spring常用注解]]></title>
+    <url>%2Fposts%2Fspring%2F2019-01-16-Spring%E5%B8%B8%E7%94%A8%E6%B3%A8%E8%A7%A3.html</url>
+    <content type="text"><![CDATA[@Configuration spring注解开发AnnotationConfigApplicationContext的使用]]></content>
+      <categories>
+        <category>spring</category>
+      </categories>
+      <tags>
+        <tag>spring</tag>
+        <tag>注解</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Spring配置数据库方式]]></title>
+    <url>%2Fposts%2FSpring%2F2019-01-15-Spring%E9%85%8D%E7%BD%AE%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%B9%E5%BC%8F.html</url>
+    <content type="text"><![CDATA[Spring中提供了多种不同形式的数据源配置方式 Spring自带的数据源(DriverMangerDataSource) DBCP数据源 C3P0数据源 Druid数据源 JNDI数据源 所有数据源的jar包下载地址1下载地址2 下面简单介绍4种配置方式 DriverMangerDataSource :说明：DriverManagerDataSource建立连接是只要能建立连接就新建一个connection，根本没有连接池的概念。 1234567//id可以随便命名，如dataSource&lt;bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"&gt; &lt;property name="driverClassName" value="com.mysql.jdbc.Driver" /&gt; &lt;property name="url" value="jdbc:mysql://localhost:3306/dbname" /&gt; &lt;property name="username" value="root" /&gt; &lt;property name="password" value="123456" /&gt;&lt;/bean&gt; DBCP DBCP的配置依赖于2个jar包commons-dbcp.jar，commons-pool.jar。 123456&lt;bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close"&gt; &lt;property name="driverClassName" value="com.mysql.jdbc.Driver" /&gt; &lt;property name="url" value="jdbc:mysql://localhost:3306/dbname" /&gt; &lt;property name="username" value="root" /&gt; &lt;property name="password" value="123456" /&gt;&lt;/bean&gt; C3P0数据源 C3P0是一个开放源代码的JDBC数据源实现项目，C3P0依赖于jar包c3p0.jar。 123456789&lt;bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close"&gt; &lt;!-- c3p0这个地方叫driverClassName --&gt; &lt;property name="driverClass" value="com.mysql.jdbc.Driver" /&gt; &lt;!-- c3p0这个地方叫url--&gt; &lt;property name="jdbcUrl" value="jdbc:mysql://localhost:3306/dbname" /&gt; &lt;!-- c3p0这个地方叫username--&gt; &lt;property name="user" value="root" /&gt; &lt;property name="password" value="123456" /&gt;&lt;/bean&gt; Druid数据源123456&lt;bean id=&quot;dataSource&quot; class=&quot;com.alibaba.druid.pool.DruidDataSource&quot; destroy-method=&quot;close&quot;&gt; &lt;property name=&quot;driverClassName&quot; value=&quot;com.mysql.jdbc.Driver&quot; /&gt; &lt;property name=&quot;url&quot; value=&quot;jdbc:mysql://localhost:3306/dbname&quot; /&gt; &lt;property name=&quot;username&quot; value=&quot;root&quot; /&gt; &lt;property name=&quot;password&quot; value=&quot;123456&quot; /&gt;&lt;/bean&gt; JNDI数据源的配置 参考链接几种数据源区别 Spring配置数据源的格式 Druid的Github地址 dbcp配置-官方文档中文版 DBCP连接池配置]]></content>
+      <categories>
+        <category>Spring</category>
+      </categories>
+      <tags>
+        <tag>Spring</tag>
+        <tag>数据库</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[数据库驱动和url格式]]></title>
+    <url>%2Fposts%2F%E6%95%B0%E6%8D%AE%E5%BA%93%2F2019-01-15-%E6%95%B0%E6%8D%AE%E5%BA%93%E9%A9%B1%E5%8A%A8%E5%92%8Curl%E6%A0%BC%E5%BC%8F.html</url>
+    <content type="text"><![CDATA[Oracle驱动：oracle.jdbc.driver.OracleDriver URL：jdbc:oracle:thin:@localhost:1521:dbname mysql驱动：com.mysql.jdbc.Driver URL：jdbc:mysql://localhost:3306/dbname SQL Server驱动：com.microsoft.jdbc.sqlserver.SQLServerDriver URL：jdbc:mirosoft:sqlserver://&lt;:1433&gt;;DatabaseName= DB2驱动：com.ibm.db2.jdbc.app.DB2Driver URL：jdbc：db2://&lt;:5000&gt;/dbname]]></content>
+      <categories>
+        <category>数据库</category>
+      </categories>
+      <tags>
+        <tag>数据库</tag>
+        <tag>mysql</tag>
+        <tag>oracle</tag>
+        <tag>sqlserver</tag>
+        <tag>db2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[CAS之ABA问题]]></title>
+    <url>%2Fposts%2F%E5%B9%B6%E5%8F%91%2F2019-01-14-CAS%E4%B9%8BABA%E9%97%AE%E9%A2%98.html</url>
+    <content type="text"><![CDATA[CAS简介CAS: Compare and Swap,比较并交换 java.util.concurrent包中借助CAS实现了区别于synchronous同步锁的一种乐观锁，使用这些类在多核CPU的机器上会有比较好的性能 CAS有3个操作，内存值V，旧的预期值A，要修改的新值B。当且仅当预期值A和内存值V相同时，将内存值V修改为B，否则什么都不做. 代码示例1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162public class ABA &#123; private static AtomicInteger atomicInt = new AtomicInteger(100); private static AtomicStampedReference atomicStampedRef = new AtomicStampedReference(100, 0); public static void main(String[] args) throws InterruptedException &#123; Thread intT1 = new Thread(new Runnable() &#123; @Override public void run() &#123; //compareAndSet为原子操作方法A=100,B=101 atomicInt.compareAndSet(100, 101); atomicInt.compareAndSet(101, 100); &#125; &#125;); Thread intT2 = new Thread(new Runnable() &#123; @Override public void run() &#123; try &#123; TimeUnit.SECONDS.sleep(1); &#125; catch (InterruptedException e) &#123; &#125; boolean c3 = atomicInt.compareAndSet(100, 101); System.out.println(c3); // true &#125; &#125;); intT1.start(); intT2.start(); intT1.join(); intT2.join(); Thread refT1 = new Thread(new Runnable() &#123; @Override public void run() &#123; try &#123; //休息1秒，让别的线程修改V的值 TimeUnit.SECONDS.sleep(1); &#125; catch (InterruptedException e) &#123; &#125; atomicStampedRef.compareAndSet(100, 101, atomicStampedRef.getStamp(), atomicStampedRef.getStamp() + 1); atomicStampedRef.compareAndSet(101, 100, atomicStampedRef.getStamp(), atomicStampedRef.getStamp() + 1); &#125; &#125;); Thread refT2 = new Thread(new Runnable() &#123; @Override public void run() &#123; //拿到版本号 int stamp = atomicStampedRef.getStamp(); try &#123; //休眠2秒，让别的线程修改版本号 TimeUnit.SECONDS.sleep(2); &#125; catch (InterruptedException e) &#123; &#125; boolean c3 = atomicStampedRef.compareAndSet(100, 101, stamp, stamp + 1); System.out.println(c3); // false &#125; &#125;); refT1.start(); refT2.start(); &#125;&#125; 源码分析 AtomicInteger 123456789101112131415161718192021 // setup to use Unsafe.compareAndSwapInt for updates private static final Unsafe unsafe = Unsafe.getUnsafe(); //用来记录value本身在内存中的内存地址，这个记录，也主要是为了在更新操作在内存中找到value的位置，方便 比较。 private static final long valueOffset; //用来存储当前的值，声明为volatile，是为了保证在更新操作时，当前线程可以拿到value的最新的值(并发情 况下，value可能已经被其他线程更新了) private volatile int value;public final boolean compareAndSet(int expect, int update) &#123; //使用unsafe的本地方法，实现高效的硬件级别CAS return unsafe.compareAndSwapInt(this, valueOffset, expect, update); &#125; public final int getAndSet(int newValue) &#123; //自旋锁 for (;;) &#123; //获取在当前线程中的值 int current = get(); if (compareAndSet(current, newValue)) return current; &#125; &#125; AtomicStampedReference 123456789//比较设置 参数依次为：期望值 写入新值 期望时间戳 新时间戳public boolean compareAndSet(V expectedReference,V newReference,int expectedStamp,int newStamp)//获得当前对象引用public V getReference()//获得当前时间戳public int getStamp()//设置当前对象引用和时间戳public void set(V newReference, int newStamp) 参考链接AtomicInteger、Unsafe类、ABA问题 ava CAS 和ABA问题 什么是CAS机制？]]></content>
+      <categories>
+        <category>并发</category>
+      </categories>
+      <tags>
+        <tag>CAS</tag>
+        <tag>并发</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[锁的分类]]></title>
     <url>%2Fposts%2Funcategorized%2F2019-01-14-%E9%94%81%E7%9A%84%E5%88%86%E7%B1%BB.html</url>
     <content type="text"></content>
